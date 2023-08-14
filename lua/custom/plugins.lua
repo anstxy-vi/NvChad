@@ -36,6 +36,9 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
+    config = function()
+      require "custom.configs.nvim-tree"
+    end,
   },
 
   -- Install a plugin
