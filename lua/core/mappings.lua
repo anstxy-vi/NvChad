@@ -251,6 +251,20 @@ M.nvimtree = {
 
     -- focus
     ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+
+    ["h"] = {
+      function()
+        require("nvim-tree.api").node.navigate.parent_close()
+      end,
+      "Close Directory",
+    },
+
+    ["v"] = {
+      function()
+        require("nvim-tree.api").node.open.vertical()
+      end,
+      "Open: Vertical Split",
+    },
   },
 }
 
