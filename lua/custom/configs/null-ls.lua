@@ -11,7 +11,7 @@ local sources = {
   -- b.formatting.prettier,
 
   b.formatting.eslint,
-  b.diagnostics.eslint,
+  -- b.diagnostics.eslint,
 
   -- b.code_actions.eslint,
 
