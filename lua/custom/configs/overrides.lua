@@ -44,6 +44,7 @@ M.mason = {
 M.nvimtree = {
   git = {
     enable = true,
+    timeout = 2500
   },
 
   renderer = {
