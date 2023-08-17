@@ -62,6 +62,10 @@ local plugins = {
   {
     "mg979/vim-visual-multi",
     lazy = false,
+  },
+  {
+    "lewis6991/satellite.nvim",
+    lazy = false,
   }
 }
 
