@@ -64,6 +64,7 @@ local plugins = {
     lazy = false,
   },
   
+  --  vim scrollbar
   {
     "lewis6991/satellite.nvim",
     lazy = false,
