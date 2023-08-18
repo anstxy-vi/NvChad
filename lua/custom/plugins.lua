@@ -73,20 +73,20 @@ local plugins = {
   --  vim document generator
   {
     "kkoomen/vim-doge",
-    lazy = false,
-    run = ":call doge#install()"
+    run = ":call doge#install()",
+    event = "BufRead",
   },
 
   -- auto save when enter quit insert mode
   {
     "Pocco81/auto-save.nvim",
-    lazy = false
+    event = "BufRead",
   },
 
   -- update surround symbol , eg: "" -> ''
   {
     "tpope/vim-surround",
-    lazy = false
+    event = "BufRead",
   }
 }
 
