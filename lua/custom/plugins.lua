@@ -74,6 +74,11 @@ local plugins = {
     "kkoomen/vim-doge",
     lazy = false,
     run = ":call doge#install()"
+  },
+
+  {
+    "Pocco81/auto-save.nvim",
+    lazy = false
   }
 }
 
