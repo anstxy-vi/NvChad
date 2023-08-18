@@ -77,7 +77,7 @@ local plugins = {
     event = "BufRead",
   },
 
-  -- auto save when enter quit insert mode
+  -- auto save when quit insert mode
   {
     "Pocco81/auto-save.nvim",
     event = "BufRead",
