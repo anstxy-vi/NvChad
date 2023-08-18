@@ -79,6 +79,11 @@ local plugins = {
   {
     "Pocco81/auto-save.nvim",
     lazy = false
+  },
+
+  {
+    "tpope/vim-surround",
+    lazy = false
   }
 }
 
