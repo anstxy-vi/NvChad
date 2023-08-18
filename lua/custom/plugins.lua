@@ -68,6 +68,11 @@ local plugins = {
   {
     "lewis6991/satellite.nvim",
     lazy = false,
+  },
+
+  {
+    "kkoomen/vim-doge",
+    lazy = false,
   }
 }
 
