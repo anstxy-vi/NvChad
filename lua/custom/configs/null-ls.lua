@@ -10,6 +10,10 @@ local sources = {
 
   -- b.formatting.prettier,
 
+  b.formatting.prettier.with({
+    extra_filetypes = { "astro" },
+  }),
+
   b.formatting.eslint,
   -- b.diagnostics.eslint,
 
