@@ -85,8 +85,13 @@ local plugins = {
 
   -- update surround symbol , eg: "" -> ''
   {
-    "tpope/vim-surround",
-    event = "BufRead",
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+    config = function()
+        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+    end
   }
 }
 
