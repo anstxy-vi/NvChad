@@ -37,9 +37,6 @@ M.mason = {
     "astro-language-server",
     "vetur-vls",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
   },
 }
 
