@@ -73,7 +73,6 @@ local plugins = {
   --  vim document generator
   {
     "kkoomen/vim-doge",
-    run = ":call doge#install()",
     event = "BufRead",
   },
 
