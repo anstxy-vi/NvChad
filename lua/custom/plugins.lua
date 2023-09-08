@@ -76,11 +76,19 @@ local plugins = {
     event = "BufRead",
   },
 
-  -- auto save when quit insert mode
   {
-    "Pocco81/auto-save.nvim",
-    event = "BufRead",
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    opts = {
+      -- add any custom options here
+    }
   },
+
+  -- auto save when quit insert mode
+  -- {
+  --   "Pocco81/auto-save.nvim",
+  --   event = "BufRead",
+  -- },
 
   -- update surround symbol , eg: "" -> ''
   {

@@ -353,6 +353,25 @@ M.whichkey = {
   plugin = true,
 
   n = {
+    ["<leader>sc"] = {
+      function()
+        vim.cmd "lua require('persistence').load()"
+      end,
+      "Restore last session for current dir",
+    },
+    ["<leader>sl"] = {
+      function()
+        vim.cmd "lua require('persistence').load({ last = true })"
+      end,
+      "Restore last session",
+    },
+    ["<leader>sq"] = {
+      function()
+        vim.cmd "lua require('persistence').stop()"
+      end,
+      "Quit without saving session",
+    },
+
     ["<leader>wK"] = {
       function()
         vim.cmd "WhichKey"
