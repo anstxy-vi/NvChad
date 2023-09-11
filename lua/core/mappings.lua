@@ -278,6 +278,13 @@ M.telescope = {
     -- theme switcher
     ["<leader>th"] = { "<cmd> Telescope themes <CR>", "Nvchad themes" },
 
+    ["<leader>tg"] = {
+      function()
+        require("base46").toggle_theme()
+      end,
+      "Toggle theme",
+    },
+
     ["<leader>ma"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
   },
 }
