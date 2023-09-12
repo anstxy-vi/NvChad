@@ -99,6 +99,11 @@ local plugins = {
             -- Configuration here, or leave empty to use defaults
         })
     end
+  },
+
+  {
+    'dyng/ctrlsf.vim',
+    event = 'BufRead'
   }
 }
 
