@@ -123,7 +123,15 @@ local plugins = {
     'neoclide/coc.nvim',
     lazy = false,
     branch = 'release'
-  }
+  },
+
+  -- {
+  --   'loctvl842/monokai-pro.nvim',
+  --   config = function()
+  --     require("monokai-pro").setup()
+  --     vim.cmd([[colorscheme monokai-pro]])
+  --   end
+  -- }
 }
 
 return plugins
