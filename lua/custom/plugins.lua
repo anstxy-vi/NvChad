@@ -107,6 +107,22 @@ local plugins = {
   {
     'dyng/ctrlsf.vim',
     event = 'BufRead'
+  },
+
+  {
+    "mhinz/vim-startify",
+    lazy = false
+  },
+
+  {
+    "justinmk/vim-sneak",
+    event = "BufRead"
+  },
+
+  {
+    'neoclide/coc.nvim',
+    lazy = false,
+    branch = 'release'
   }
 }
 
