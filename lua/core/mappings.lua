@@ -388,6 +388,7 @@ M.whichkey = {
     },
     ["<leader>sl"] = {
       function()
+        require("nvim-tree").focus()
         vim.cmd "lua require('persistence').load({ last = true })"
       end,
       "Restore last session",
