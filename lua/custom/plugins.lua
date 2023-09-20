@@ -125,6 +125,14 @@ local plugins = {
     branch = 'release'
   },
 
+  {
+    'sainnhe/sonokai',
+    lazy = false,
+    config = function()
+      vim.cmd([[colorscheme sonokai]])
+    end
+  }
+
   -- {
   --   'loctvl842/monokai-pro.nvim',
   --   config = function()
