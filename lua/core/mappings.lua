@@ -44,6 +44,8 @@ M.general = {
 
     -- new buffer
     ["<leader>b"] = { "<cmd> enew <CR>", "New buffer" },
+    -- ["<leader>co"] = { "<cmd> %bd|e# <CR><cmd>NvimTreeToggle<CR><cmd>", "Close all buffers but not this" },
+
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
     ["<leader>fm"] = {
@@ -97,6 +99,24 @@ M.tabufline = {
         require("nvchad.tabufline").close_buffer()
       end,
       "Close buffer",
+    },
+    ["<leader>Ba"] = {
+      function()
+        require("nvchad.tabufline").closeAllBufs()
+      end,
+      "Close All buffers",
+    },
+    ["<leader>tn"] = {
+      function()
+        require("nvchad.tabufline").move_buf(1)
+      end,
+      "move buffer right",
+    },
+    ["<leader>tp"] = {
+      function()
+        require("nvchad.tabufline").move_buf(-1)
+      end,
+      "move buffer left",
     },
   },
 }

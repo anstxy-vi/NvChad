@@ -23,7 +23,7 @@ local sources = {
   b.formatting.stylua,
 
   -- cpp
-  b.formatting.clang_format,
+  -- b.formatting.clang_format,
 }
 
 null_ls.setup {
