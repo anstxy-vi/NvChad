@@ -114,10 +114,10 @@ local plugins = {
     event = 'VeryLazy'
   },
 
-  {
-    "justinmk/vim-sneak",
-    event = "BufRead"
-  },
+  -- {
+  --   "justinmk/vim-sneak",
+  --   event = "BufRead"
+  -- },
 
   -- {
   --   'neoclide/coc.nvim',
