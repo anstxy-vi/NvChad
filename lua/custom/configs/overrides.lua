@@ -36,7 +36,7 @@ M.mason = {
     "prettier",
     "astro-language-server",
     "vetur-vls",
-    "ESLint"
+    -- "ESLint"
   },
 }
 

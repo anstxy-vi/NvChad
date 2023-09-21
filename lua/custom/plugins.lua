@@ -74,7 +74,7 @@ local plugins = {
   {
     "kkoomen/vim-doge",
     event = "BufRead",
-    config = function()
+    build = function()
       vim.cmd([[call doge#install()]])
     end
   },
@@ -132,14 +132,6 @@ local plugins = {
       vim.cmd([[colorscheme sonokai]])
     end
   }
-
-  -- {
-  --   'loctvl842/monokai-pro.nvim',
-  --   config = function()
-  --     require("monokai-pro").setup()
-  --     vim.cmd([[colorscheme monokai-pro]])
-  --   end
-  -- }
 }
 
 return plugins

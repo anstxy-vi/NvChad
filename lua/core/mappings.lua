@@ -44,7 +44,6 @@ M.general = {
 
     -- new buffer
     ["<leader>b"] = { "<cmd> enew <CR>", "New buffer" },
-    -- ["<leader>co"] = { "<cmd> %bd|e# <CR><cmd>NvimTreeToggle<CR><cmd>", "Close all buffers but not this" },
 
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
