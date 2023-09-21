@@ -9,7 +9,7 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
-    "c",
+    -- "c",
     "markdown",
     "markdown_inline",
     "astro"
@@ -53,7 +53,7 @@ M.nvimtree = {
       show = {
         git = true,
       },
-    },
+    },  
   },
 }
 

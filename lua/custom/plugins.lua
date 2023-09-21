@@ -111,7 +111,7 @@ local plugins = {
 
   {
     "mhinz/vim-startify",
-    lazy = false
+    event = 'VeryLazy'
   },
 
   {
@@ -119,11 +119,11 @@ local plugins = {
     event = "BufRead"
   },
 
-  {
-    'neoclide/coc.nvim',
-    lazy = false,
-    branch = 'release'
-  },
+  -- {
+  --   'neoclide/coc.nvim',
+  --   lazy = false,
+  --   branch = 'release'
+  -- },
 
   {
     'sainnhe/sonokai',
