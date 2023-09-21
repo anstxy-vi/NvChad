@@ -132,7 +132,16 @@ local plugins = {
     'sainnhe/sonokai',
     lazy = false,
     config = function()
+      -- vim.cmd([[let g:sonokai_diagnostic_text_highlight = 1]])
       vim.cmd([[colorscheme sonokai]])
+    end
+  },
+
+  {
+    'zbirenbaum/neodim',
+    event = "LspAttach",
+    config = function()
+      require "custom.configs.neodim"
     end
   }
 }
