@@ -47,6 +47,9 @@ M.general = {
 
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
+    ["<A-Down>"] = { "<cmd> vertical resize -5 <CR>", "-5 width buffer" },
+    ["<A-Up>"] = { "<cmd> vertical resize +5 <CR>", "+5 width buffer" },
+
     ["<leader>fm"] = {
       function()
         vim.lsp.buf.format { async = true }
