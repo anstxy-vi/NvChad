@@ -138,10 +138,11 @@ local plugins = {
   },
 
   {
-    'zbirenbaum/neodim',
-    event = "LspAttach",
+    'narutoxy/dim.lua',
+    dependencies = { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" },
+    lazy = false,
     config = function()
-      require "custom.configs.neodim"
+      require('dim').setup({})
     end
   }
 }
