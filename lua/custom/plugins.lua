@@ -113,7 +113,7 @@ local plugins = {
     "mhinz/vim-startify",
     lazy = false,
     config = function()
-      vim.cmd([[ let g:startify_padding_left = 80 ]])
+      vim.cmd([[ let g:startify_padding_left = 60 ]])
     end
   },
 
