@@ -111,7 +111,7 @@ local plugins = {
 
   {
     "mhinz/vim-startify",
-    event = 'VeryLazy'
+    lazy = false
   },
 
   -- {
