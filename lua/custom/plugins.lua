@@ -140,7 +140,7 @@ local plugins = {
   {
     'narutoxy/dim.lua',
     dependencies = { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" },
-    lazy = false,
+    event = "BufRead",
     config = function()
       require('dim').setup({})
     end
