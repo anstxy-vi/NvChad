@@ -37,6 +37,8 @@ M.mason = {
     "astro-language-server",
     "vetur-vls",
     -- "ESLint"
+
+    "rust-analyzer"
   },
 }
 
