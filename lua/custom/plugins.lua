@@ -65,10 +65,10 @@ local plugins = {
   },
   
   --  vim scrollbar
-  {
-    "lewis6991/satellite.nvim",
-    lazy = false,
-  },
+  -- {
+  --   "lewis6991/satellite.nvim",
+  --   lazy = false,
+  -- },
 
   --  vim document generator
   {
@@ -144,7 +144,12 @@ local plugins = {
     config = function()
       require('dim').setup({})
     end
-  }
+  },
+  
+  -- {
+  --   'rust-lang/rustfmt',
+  --   event = "BufRead",
+  -- }
 }
 
 return plugins
