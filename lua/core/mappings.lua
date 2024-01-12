@@ -13,9 +13,6 @@ M.general = {
     ["<C-l>"] = { "<Right>", "Move right" },
     ["<C-j>"] = { "<Down>", "Move down" },
     ["<C-k>"] = { "<Up>", "Move up" },
-    
-    -- save
-    ["<C-s>"] = { "<cmd> w <CR> <Esc>", "Save file and to Normal mode" },
   },
 
   n = {
