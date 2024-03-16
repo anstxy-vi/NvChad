@@ -38,7 +38,8 @@ M.mason = {
     "vetur-vls",
     -- "ESLint"
 
-    "rust-analyzer"
+    "rust-analyzer",
+    "gopls"
   },
 }
 
