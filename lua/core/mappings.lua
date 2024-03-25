@@ -104,6 +104,11 @@ M.tabufline = {
       end,
       "Close buffer",
     },
+    ["<leader>B"] = {
+      function()
+      end,
+      "Buffers",
+    },
     ["<leader>Ba"] = {
       function()
         require("nvchad.tabufline").closeAllBufs()
