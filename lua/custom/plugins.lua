@@ -133,14 +133,26 @@ local plugins = {
   --   branch = 'release'
   -- },
 
-  {
-    'sainnhe/sonokai',
-    lazy = false,
-    config = function()
-      -- vim.cmd([[let g:sonokai_diagnostic_text_highlight = 1]])
-      vim.cmd([[colorscheme sonokai]])
-    end
-  },
+  -- {
+  --   'sainnhe/sonokai',
+  --   lazy = false,
+  --   config = function()
+  --     -- vim.cmd([[let g:sonokai_diagnostic_text_highlight = 1]])
+  --     vim.cmd([[colorscheme sonokai]])
+  --   end
+    -- },
+{
+  'projekt0n/github-nvim-theme',
+  lazy = false, -- make sure we load this during startup if it is your main colorscheme
+  priority = 1000, -- make sure to load this before all the other start plugins
+  config = function()
+    require('github-theme').setup({
+      -- ...
+    })
+
+    vim.cmd('colorscheme github_dark_colorblind')
+  end,
+},
 
   {
     'narutoxy/dim.lua',
