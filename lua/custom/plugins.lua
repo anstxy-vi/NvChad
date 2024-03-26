@@ -50,12 +50,6 @@ local plugins = {
     end,
   },
 
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
-
   -- All NvChad plugins are lazy-loaded by default
   -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
   -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
@@ -63,12 +57,10 @@ local plugins = {
     "mg979/vim-visual-multi",
     lazy = false,
   },
-  
-  --  vim scrollbar
-  -- {
-  --   "lewis6991/satellite.nvim",
-  --   lazy = false,
-  -- },
+  {
+    "justinmk/vim-sneak",
+    event = "BufRead"
+  },
 
   --  vim document generator
   {
@@ -93,7 +85,7 @@ local plugins = {
     event = "BufRead",
     config = function()
       require("auto-save").setup({
-        trigger_events = {"InsertLeave"}
+        trigger_events = { "InsertLeave" }
       })
     end
   },
@@ -103,9 +95,9 @@ local plugins = {
     "kylechui/nvim-surround",
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   },
 
@@ -121,39 +113,23 @@ local plugins = {
     --   vim.cmd([[ let g:startify_padding_left = 60 ]])
     -- end
   },
-
-  -- {
-  --   "justinmk/vim-sneak",
-  --   event = "BufRead"
-  -- },
-
-  -- {
-  --   'neoclide/coc.nvim',
-  --   lazy = false,
-  --   branch = 'release'
-  -- },
-
-  -- {
-  --   'sainnhe/sonokai',
-  --   lazy = false,
-  --   config = function()
-  --     -- vim.cmd([[let g:sonokai_diagnostic_text_highlight = 1]])
-  --     vim.cmd([[colorscheme sonokai]])
-  --   end
-    -- },
-{
-  'projekt0n/github-nvim-theme',
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
-  priority = 1000, -- make sure to load this before all the other start plugins
-  config = function()
-    require('github-theme').setup({
-      -- ...
-    })
-
-    vim.cmd('colorscheme github_dark_tritanopia')
-  end,
-},
-
+  {
+    'projekt0n/github-nvim-theme',
+    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require('github-theme').setup({})
+      -- vim.cmd('colorscheme github_dark_tritanopia')
+    end,
+  },
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      vim.cmd('colorscheme kanagawa-dragon')
+    end,
+  },
   {
     'narutoxy/dim.lua',
     dependencies = { "nvim-treesitter/nvim-treesitter", "neovim/nvim-lspconfig" },
@@ -162,11 +138,6 @@ local plugins = {
       require('dim').setup({})
     end
   },
-  
-  -- {
-  --   'rust-lang/rustfmt',
-  --   event = "BufRead",
-  -- }
 }
 
 return plugins
