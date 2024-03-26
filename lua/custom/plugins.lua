@@ -113,21 +113,38 @@ local plugins = {
     --   vim.cmd([[ let g:startify_padding_left = 60 ]])
     -- end
   },
+  -- {
+  --   'projekt0n/github-nvim-theme',
+  --   lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     require('github-theme').setup({})
+  --     -- vim.cmd('colorscheme github_dark_tritanopia')
+  --   end,
+  -- },
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     vim.cmd('colorscheme kanagawa-dragon')
+  --   end,
+  -- },
+  -- {
+  --   "bluz71/vim-nightfly-colors",
+  --   lazy = false,    -- make sure we load this during startup if it is your main colorscheme
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     -- vim.cmd('colorscheme nightfly')
+  --   end,
+  --   },
   {
-    'projekt0n/github-nvim-theme',
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
     config = function()
-      require('github-theme').setup({})
-      -- vim.cmd('colorscheme github_dark_tritanopia')
-    end,
-  },
-  {
-    "rebelot/kanagawa.nvim",
-    lazy = false,    -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-    config = function()
-      vim.cmd('colorscheme kanagawa-dragon')
+      vim.cmd('colorscheme tokyonight-night')
     end,
   },
   {
