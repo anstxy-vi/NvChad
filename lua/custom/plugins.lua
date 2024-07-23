@@ -138,14 +138,28 @@ local plugins = {
   --     -- vim.cmd('colorscheme nightfly')
   --   end,
   --   },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {},
+  --   config = function()
+  --     vim.cmd('colorscheme tokyonight-night')
+  --   end,
+  -- },
   {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+    "loctvl842/monokai-pro.nvim",
     config = function()
-      vim.cmd('colorscheme tokyonight-night')
-    end,
+      require("monokai-pro").setup({
+                filter = "spectrum", -- classic | octagon | pro | machine | ristretto | spectrum
+                override = function()
+                  return {
+                      Normal = { bg = "#000000" }
+                    }
+                end
+      })
+      -- vim.cmd([[colorscheme monokai-pro]])
+    end
   },
   {
     'narutoxy/dim.lua',
